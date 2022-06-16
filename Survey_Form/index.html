@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Program Camp Survey</h1>
+        <p id="description">Thank you for taking the time to fill out !</p>
+      </header>
+
+      <form id="survey-form" action="">
+        <div class="formgroup">
+          <label id="name-label" for="">Name</label
+          ><input
+            class="form-control"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="formgroup">
+          <label id="email-label" for="">Email</label>
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="formgroup">
+          <label id="number-label" for="">Age</label>
+          <input
+            class="form-control"
+            type="number"
+            id="number"
+            min="18"
+            max="100"
+            name="age"
+            placeholder="Age"
+          />
+        </div>
+        <div class="formgroup">
+          <label id="" for=""
+            >Which option best describes your current role?</label
+          >
+          <select class="form-control" name="" id="dropdown">
+            <option disabled selected value="">Select current role</option>
+            <option value="">Student</option>
+            <option value="">Full time job</option>
+            <option value="">Full time learner</option>
+            <option value="">Prefer not to say</option>
+            <option value="">Other</option>
+          </select>
+        </div>
+        <div class="formgroup">
+          <p>
+            If the job change is successful in the future, would you recommend
+            this training camp?
+          </p>
+          <label
+            ><input
+              class="radio-control"
+              type="radio"
+              name="recommend"
+              value="yes"
+            />Yes!</label
+          >
+
+          <label for=""
+            ><input
+              class="radio-control"
+              type="radio"
+              name="recommend"
+              value="maybe"
+            />Maybe?</label
+          >
+
+          <label for=""
+            ><input
+              class="radio-control"
+              type="radio"
+              name="recommend"
+              value="no"
+            />No</label
+          >
+        </div>
+        <div class="formgroup">
+          <p>How did you find out about this camp?</p>
+          <select class="form-control" name="" id="">
+            <option disabled selected value>Select an option</option>
+            <option value="">Youtube</option>
+            <option value="">Facebook</option>
+            <option value="">Ads</option>
+            <option value="">friend introduction</option>
+          </select>
+        </div>
+        <div class="formgroup">
+          <p>
+            What skills do you want to learn through this camp??<span
+              >(Can multiple choice)</span
+            >
+          </p>
+          <label for=""
+            ><input
+              class="checkbox-control"
+              type="checkbox"
+              value="html"
+            />HTML</label
+          >
+          <label for=""
+            ><input
+              class="checkbox-control"
+              type="checkbox"
+              value="css"
+            />CSS</label
+          >
+          <label for=""
+            ><input
+              class="checkbox-control"
+              type="checkbox"
+              value="javaScript"
+            />JavaScript</label
+          >
+          <label for=""
+            ><input
+              class="checkbox-control"
+              type="checkbox"
+              value="node.js"
+            />Node.JS</label
+          >
+          <label for=""
+            ><input
+              class="checkbox-control"
+              type="checkbox"
+              value="c#"
+            />C#</label
+          >
+          <label for=""
+            ><input
+              class="checkbox-control"
+              type="checkbox"
+              value="php"
+            />PHP</label
+          >
+        </div>
+        <div class="formgroup">
+          <p>Any advice for us?</p>
+          <textarea
+            class="textarea-control"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Fill in your content here"
+          ></textarea>
+        </div>
+        <div class="formgroup">
+          <button class="btn-submit" id="submit">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
